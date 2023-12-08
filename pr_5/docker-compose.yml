@@ -1,0 +1,45 @@
+version: "3.9"
+services:
+  app1:
+    image: simple-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: on-failure
+    environment:
+      - NAME_APP=app1
+    volumes:
+      - ../upload-files:/upload-files
+
+  app2:
+    image: simple-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "8081:8080"
+    environment:
+      - NAME_APP=app2
+    volumes:
+      - ../upload-files:/upload-files
+
+  app3:
+    image: simple-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8080"
+    restart: on-failure
+    environment:
+      - NAME_APP=app3
+    volumes:
+      - ../upload-files:/upload-files
+
+  app4:
+    image: simple-app
+    build:
+      context: .
