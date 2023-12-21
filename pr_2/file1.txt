@@ -1,3 +1,3 @@
-i really fond of Java
-but
-i lied
+Hello, world!
+My name is Anton
+And i'm in love with Java!

@@ -20,8 +20,7 @@ public class SquareGenerator {
 
                 // Пока выполняется задача, пользователь может отправить новый запрос
                 while (!futureResult.isDone()) {
-                    System.out.println("Выполняется обработка запроса. Вы можете отправить новый запрос.");
-//                    TimeUnit.SECONDS.sleep(1);
+                    System.out.println("\nВыполняется обработка запроса. Вы можете отправить новый запрос.");
                     int delay = ThreadLocalRandom.current().nextInt(1000, 5000);
                     Thread.sleep(delay);
                 }

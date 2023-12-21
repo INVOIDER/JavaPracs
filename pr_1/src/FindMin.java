@@ -3,7 +3,7 @@ import java.util.concurrent.*;
 
 public class FindMin {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
-        int[] arr = new int[100000];
+        int[] arr = new int[10000];
 
         long startTime = System.nanoTime();
         ArrGeneration(arr);
